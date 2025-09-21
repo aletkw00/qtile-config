@@ -8,5 +8,7 @@
 !.xprofile
 !.config/qtile
 !.config/rofi
+!.config/dunst
 !.config/lxsession
-
+!.config/qtile/__pycache__
+!.config/qtile/colors.py
