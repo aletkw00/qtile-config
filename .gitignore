@@ -1,0 +1,12 @@
+# ignora tutto
+*
+
+# ma tieni questi:
+!.gitignore
+!.bashrc
+!.xinitrc
+!.xprofile
+!.config/qtile
+!.config/rofi
+!.config/lxsession
+
