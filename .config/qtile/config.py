@@ -3,13 +3,13 @@ import os
 import subprocess
 
 import files
-from iconBattery import IconBattery
 from libqtile import bar, hook, layout, qtile
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 from qtile_extras import widget
 from qtile_extras.widget.decorations import RectDecoration
+from widgets.iconBattery import IconBattery
 
 # Reuse your fontsize variable
 mod = "mod4"
@@ -456,7 +456,7 @@ def restart_on_randr(event):
 
 @hook.subscribe.startup_once
 def autostart():
-    with open("/home/alessio/autostart.log", "w") as f:
+    with open("/home/alessio/.autostart.log", "w") as f:
         f.write("Starting autostart.sh and picom...\n")
         try:
             home = os.path.expanduser(
